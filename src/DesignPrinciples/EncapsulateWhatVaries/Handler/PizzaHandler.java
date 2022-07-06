@@ -10,7 +10,7 @@ import DesignPrinciples.EncapsulateWhatVaries.Data.PizzaTypes;
 import static DesignPrinciples.EncapsulateWhatVaries.Data.PizzaTypes.CHICKEN;
 
 public class PizzaHandler {
-    public static Pizza PreparePizzaOfType(String type){
+    public static Pizza PreparePizzaOfType(int type){
         Pizza pizza;
 
         switch (type) {

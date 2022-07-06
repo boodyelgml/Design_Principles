@@ -3,7 +3,7 @@ package DesignPrinciples.EncapsulateWhatVaries.PizzaTypes;
 import DesignPrinciples.EncapsulateWhatVaries.Data.PizzaTypes;
 
 public class Cheese extends Pizza{
-    public static String title = PizzaTypes.CHEESE;
+    public static String title = "Cheese";
     public static Integer price = 10;
 
     @Override

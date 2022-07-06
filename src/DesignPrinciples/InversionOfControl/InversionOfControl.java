@@ -1,4 +1,4 @@
-package DesignPrinciples.inversionofcontrol;
+package DesignPrinciples.InversionOfControl;
 
 public class InversionOfControl {
     public static void main(String[] args) {

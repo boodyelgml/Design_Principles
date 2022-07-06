@@ -1,8 +1,8 @@
 package DesignPrinciples.EncapsulateWhatVaries.Data;
 
 public class PizzaTypes {
-    public static final String CHEESE = "Cheese";
-    public static final String MARGHERITA = "Margherita";
-    public static final String BUFFALO = "Buffalo";
-    public static final String CHICKEN = "Chicken";
+    public static final int CHEESE = 1;
+    public static final int MARGHERITA = 2;
+    public static final int BUFFALO = 3;
+    public static final int CHICKEN = 4;
 }

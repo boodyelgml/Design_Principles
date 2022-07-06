@@ -3,7 +3,7 @@ package DesignPrinciples.EncapsulateWhatVaries.PizzaTypes;
 import DesignPrinciples.EncapsulateWhatVaries.Data.PizzaTypes;
 
 public class Chicken extends Pizza{
-    public static String title = PizzaTypes.CHICKEN;
+    public static String title = "Chicken";
     public static Integer price = 100;
 
     @Override

@@ -2,25 +2,29 @@ package DesignPrinciples.EncapsulateWhatVaries.PizzaTypes;
 
 import DesignPrinciples.EncapsulateWhatVaries.Handler.PizzaHandler;
 
+import java.util.Scanner;
+
 public class Pizza {
 
-    public static String title;
-    public static Integer price;
+    public static String title = "Pizza";
+    public static Integer price = 0;
 
     // here we encapsulated the pizza object init logic as it will vary over time
     // this can be solved too with Factory Pattern
-    public void OrderOnBoard(String type) throws InterruptedException {
-        Pizza pizza = PizzaHandler.PreparePizzaOfType(type);
+    public void OrderOnBoard(int pizzaNumber) throws InterruptedException {
+        Pizza pizza = PizzaHandler.PreparePizzaOfType(pizzaNumber);
 
         Prepare();
         cook();
         box();
+        System.out.println("=====================");
         System.out.println(pizza);
+
     }
 
     // here we encapsulated the pizza object init logic as it will vary over time
     // this can be solved too with Factory Pattern
-    public void OrderForDelivery(String type) throws InterruptedException {
+    public void OrderForDelivery(int type) throws InterruptedException {
         Pizza pizza = PizzaHandler.PreparePizzaOfType(type);
 
         Prepare();
@@ -32,19 +36,19 @@ public class Pizza {
     }
 
     public void Prepare() throws InterruptedException {
-        System.out.println("Preparing...");
+        System.out.print("Preparing...");
         Thread.sleep(1000);
         System.out.println("Done.");
     }
 
     public void cook() throws InterruptedException {
-        System.out.println("Cooking...");
+        System.out.print("Cooking...");
         Thread.sleep(1500);
         System.out.println("Done.");
     }
 
     public void box() throws InterruptedException {
-        System.out.println("Boxing...");
+        System.out.print("Boxing...");
         Thread.sleep(500);
         System.out.println("Boxed.");
     }
