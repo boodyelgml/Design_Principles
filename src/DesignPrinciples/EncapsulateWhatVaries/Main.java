@@ -1,11 +1,10 @@
 package DesignPrinciples.EncapsulateWhatVaries;
 
-import DesignPrinciples.EncapsulateWhatVaries.Data.PizzaTypes;
 import DesignPrinciples.EncapsulateWhatVaries.PizzaTypes.Pizza;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         System.out.println("1- cheese");
