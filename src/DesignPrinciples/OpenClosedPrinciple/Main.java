@@ -1,5 +1,8 @@
 package DesignPrinciples.OpenClosedPrinciple;
 
+// لازم يكون الكلاس او البيزنس او الموديول مفتوح للتمدد ومغلق للتعديل
+// وبنستخدم ال interface عشان نحقق المبدأ دا
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         // get basic coffee

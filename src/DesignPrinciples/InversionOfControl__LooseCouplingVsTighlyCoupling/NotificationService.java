@@ -1,4 +1,4 @@
-package DesignPrinciples.FavorLooseCouplingOverTighlyCoupling;
+package DesignPrinciples.InversionOfControl__LooseCouplingVsTighlyCoupling;
 
 public class NotificationService {
     public final INotificationModel notificationModel;

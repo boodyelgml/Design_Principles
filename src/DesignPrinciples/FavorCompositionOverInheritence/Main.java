@@ -6,13 +6,13 @@ import DesignPrinciples.FavorCompositionOverInheritence.Handler.BenfitsHandler;
 
 import java.util.Scanner;
 
+// لما نيجى نفكر ف التوارث لازم الأول نسأل العلاقة أية بين الأثنين
+// إذا كانت علاقة نقية تماما و بتعبر عن is a ف بنستخدم ال inheritance
+// اما اذا كانت العلاقة غير نقية وبتعبر عن has a ف بنستخدم التكوين او ال composition
+
 public class Main {
 
     public static void main(String[] args) {
-
-        // we composite an object inside every object instead of inherit from it
-        // because Employee "has a" person
-        // because Programmer "has an" employee
 
         Person person = new Person("Abdelrahman Fathy", "27");
         Employee employee = new Employee("Front End", person);

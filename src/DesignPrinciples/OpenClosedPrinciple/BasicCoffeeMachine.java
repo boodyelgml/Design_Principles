@@ -1,6 +1,7 @@
 package DesignPrinciples.OpenClosedPrinciple;
 
 public class BasicCoffeeMachine  implements ICofeeMachine {
+    public static final String modelName = "Samsung";
 
     @Override
     public String Prepairing() {

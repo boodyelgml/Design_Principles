@@ -1,20 +1,23 @@
 package DesignPrinciples.OpenClosedPrinciple;
 
 public class PremiumCoffeeMachine implements ICofeeMachine{
-    public static final String modelName = "Samsung";
-
-    @Override
-    public String Filtering() {
-        return null;
-    }
+    public static final String modelName = "LG";
 
     @Override
     public String Prepairing() {
-        return null;
+        return "Preparing ... ";
     }
 
     @Override
-    public String Filling() {
-        return null;
+    public String Filtering() throws InterruptedException {
+        Thread.sleep(500);
+        return "Filtering ... ";
+    }
+
+
+    @Override
+    public String Filling() throws InterruptedException {
+        Thread.sleep(500);
+        return "Filling ... ";
     }
 }
